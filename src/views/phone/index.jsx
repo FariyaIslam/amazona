@@ -1,26 +1,26 @@
 import { MessageDisplay } from 'components/common';
 import { ProductShowcaseGrid } from 'components/product';
-import { useDocumentTitle, useOfficeEquipmentProducts, useScrollTop, useWardrobeProducts } from 'hooks';
+import { useDocumentTitle, useScrollTop, usePhoneProducts } from 'hooks';
 import bannerImg from 'images/banner-guy.png';
 import React from 'react';
 
-const Wardrobe = () => {
+const Phone = () => {
   useDocumentTitle('Featured Products | Amazona');
   useScrollTop();
 
   const {
-    wardrobeProducts,
-    fetchWardrobeProducts,
+    phoneProducts,
+    fetchPhoneeProducts,
     isLoading,
     error
-  } = useWardrobeProducts();
+  } = usePhoneProducts();
 
   return (
     <main className="content">
       <div className="featured">
         <div className="banner">
           <div className="banner-desc">
-            <h1>Wardrobe Products</h1>
+            <h1>Here your latest phone!</h1>
           </div>
           <div className="banner-img">
             <img src={bannerImg} alt="" />
@@ -31,12 +31,12 @@ const Wardrobe = () => {
             {(error && !isLoading) ? (
               <MessageDisplay
                 message={error}
-                action={fetchWardrobeProducts}
+                action={fetchPhoneProducts}
                 buttonLabel="Try Again"
               />
             ) : (
               <ProductShowcaseGrid
-                products={wardrobeProducts}
+                products={phoneProducts}
                 skeletonCount={6}
               />
             )}
@@ -47,4 +47,4 @@ const Wardrobe = () => {
   );
 };
 
-export default Wardrobe;
+export default Phone;

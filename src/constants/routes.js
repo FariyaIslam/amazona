@@ -24,4 +24,4 @@ export const HOME_APPLIANCE = '/home_appliance';
 export const WARDROBE = '/wardrobe';
 export const OFFICE_EQUIPMENT = '/office_equipment';
 export const AUTO_MOBILE = '/auto_mobile';
-export const MOBILE= '/mobile';
+export const PHONE = '/phone';

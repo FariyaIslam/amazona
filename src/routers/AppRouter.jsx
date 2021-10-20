@@ -36,11 +36,11 @@ const AppRouter = () => (
           exact
           path={ROUTES.SHOP}
         />
-        {/* <Route
+        <Route
           component={view.FeaturedProducts}
           exact
           path={ROUTES.FEATURED_PRODUCTS}
-        /> */}
+        />
         <Route
           component={view.RecommendedProducts}
           exact
@@ -105,34 +105,34 @@ const AppRouter = () => (
 
         {/* New Logic */}
         <Route
-          component={view.HomeAppliance} 
+          component={view.HomeAppliance}
           exact
           path={ROUTES.HOME_APPLIANCE}
         />
 
-        <Route 
-          component = {view.Mobile}
+        <Route
+          component={view.Phone}
           exact
-          path = {ROUTES.MOBILE}
+          path={ROUTES.PHONE}
         />
 
-        <Route 
-        component = {view.OfficeEquipment}
-        exact
-        path = {ROUTES.OFFICE_EQUIPMENT}
+        <Route
+          component={view.OfficeEquipment}
+          exact
+          path={ROUTES.OFFICE_EQUIPMENT}
         />
 
-    
-        <Route 
-          component = {view.AutoMobile}
+
+        <Route
+          component={view.AutoMobile}
           exact
-          path = {ROUTES.AUTO_MOBILE}
+          path={ROUTES.AUTO_MOBILE}
         />
 
-        <Route 
-          component = {view.Wardrobe}
+        <Route
+          component={view.Wardrobe}
           exact
-          path = {ROUTES.WARDROBE}
+          path={ROUTES.WARDROBE}
         />
 
 
